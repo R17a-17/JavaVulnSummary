@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="weblogic">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/weblogic/lib/weblogic" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/weblogic/lib/weblogic" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/weblogic/lib/weblogic" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/weblogic/lib/weblogic" recursive="false" type="SOURCES" />
+  </library>
+</component>

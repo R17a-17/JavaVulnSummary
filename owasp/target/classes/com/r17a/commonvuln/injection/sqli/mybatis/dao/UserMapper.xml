@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.r17a.commonvuln.injection.sqli.mybatis.dao.UserMapper">
+    <select id="queryAll" resultType="hashmap">
+        SELECT * FROM user
+    </select>
+    <select id="getById" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where id=${i}
+    </select>
+    <select id="getByIdPrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where id=#{id}
+    </select>
+    <select id="getByLike" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where name like '%${name}%'
+    </select>
+<!--    <select id="getByLikePrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">-->
+<!--        SELECT * FROM user where name like concat('%',#{name}, '%')-->
+<!--    </select>-->
+    <select id="getByLikePrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where name like "%"#{name}"%"
+    </select>
+    <select id="getByIn" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where id in (${id})
+    </select>
+    <select id="getByInFix" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user where id in
+        <foreach collection="array" item="id" index="index" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+    <select id="getByOrder" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user order by ${coln} asc
+    </select>
+    <select id="getByOrderFix" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
+        SELECT * FROM user order by
+        <choose>
+            <when test="coln == 'id' or coln == 'name' or coln == 'password'">
+                ${coln}
+            </when>
+            <otherwise>
+                name
+            </otherwise>
+        </choose>
+        asc
+    </select>
+</mapper>

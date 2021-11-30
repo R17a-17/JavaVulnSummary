@@ -1,0 +1,16 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(þ…¨«ÿÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(þ…¨«ÿÿÿÿÿ
+i
+java:S5843:"TSimplify this regular expression to reduce its complexity from 23 to the 20 allowed.(ð£Í
+J
+java:S11440"/Remove this unused private "cmdWithFix" method.(´úÜÓúÿÿÿÿ
+a
+java:S5998:"LRefactor this repetition that can lead to a stack overflow for large inputs.(ð£Í
+N
+java:S3878!"8Remove this array creation and simply pass the elements.(òŽ¦Ä
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(þ…¨«ÿÿÿÿÿ
+M
+java:S3878?"8Remove this array creation and simply pass the elements.(Îñ¡3
+C
+java:S1144"-Remove this unused private "cmdNoFix" method.(Šöú¢

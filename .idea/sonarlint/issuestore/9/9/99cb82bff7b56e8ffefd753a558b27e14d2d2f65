@@ -1,0 +1,22 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ê±àìÿÿÿÿÿ8ö°üÂ/
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ê±àìÿÿÿÿÿ8÷°üÂ/
+Q
+java:S3740"/Provide the parametrized type for this generic.(£ˆã„ùÿÿÿÿ8÷°üÂ/
+Q
+java:S3740"/Provide the parametrized type for this generic.(£ˆã„ùÿÿÿÿ8ø°üÂ/
+V
+java:S1854"";Remove this useless assignment to local variable "payload".(Ô¶ƒéùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ø«ÂÏ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(š³øĞ
+G
+java:S1481"",Remove this unused "payload" local variable.(Ô¶ƒéùÿÿÿÿ
+V	java:S125$"<This block of commented-out lines of code should be removed.(ôëÛ—øÿÿÿÿ
+Q	java:S125("<This block of commented-out lines of code should be removed.(çî’˜
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ää¹„
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(‘µ²Í
+g
+java:S2095"LUse try-with-resources or close this "JdbcRowSetImpl" in a "finally" clause.(Õ¨üÿÿÿÿ

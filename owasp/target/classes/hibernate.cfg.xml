@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+
+        <property name="current_session_context_class">thread</property>
+
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/users?serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1qazXSW@3edc</property>
+
+        <!-- 可以将向数据库发送的SQL语句显示出来 -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- 格式化SQL语句 -->
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- hibernate的方言 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- 配置hibernate的映射文件所在的位置 -->
+        <mapping resource="com/r17a/commonvuln/injection/sqli/hibernate/pojo/User.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

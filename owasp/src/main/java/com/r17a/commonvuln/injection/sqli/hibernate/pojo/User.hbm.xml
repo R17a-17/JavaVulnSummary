@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.r17a.commonvuln.injection.sqli.hibernate.pojo">
+    <!--
+        name：即实体类的全名
+        table：映射到数据库里面的那个表的名称
+        catalog：数据库的名称
+     -->
+    <class name="com.r17a.commonvuln.injection.sqli.hibernate.pojo.User" table="user" catalog="users">
+        <!-- class下必须要有一个id的子元素 -->
+        <!-- id是用于描述主键的 -->
+        <id name="id" column="id">
+            <!-- 主键生成策略 -->
+            <generator class="native"></generator>
+        </id>
+        <!--
+            使用property来描述属性与字段的对应关系
+            如果length忽略不写，且你的表是自动创建这种方案，那么length的默认长度是255
+        -->
+        <property name="name" column="name" type="string"></property>
+        <property name="password" column="password" type="string"></property>
+        <property name="date" column="date" type="string"></property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="weblogic" />
+        <module name="common" />
+        <module name="jboss" />
+        <module name="owasp" />
+        <module name="ysoserial" />
+        <module name="jndi" />
+        <module name="java-expression-injection" />
+        <module name="fastjson" />
+        <module name="xstream" />
+        <module name="jenkins" />
+        <module name="confluence" />
+        <module name="struts2" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

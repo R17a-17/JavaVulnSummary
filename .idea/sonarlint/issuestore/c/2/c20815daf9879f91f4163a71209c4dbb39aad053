@@ -1,0 +1,14 @@
+
+V	java:S125
+"<This block of commented-out lines of code should be removed.(Î™î´şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ş…¨«ÿÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ş…¨«ÿÿÿÿÿ
+a
+java:S59988"LRefactor this repetition that can lead to a stack overflow for large inputs.(ğ£Í
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ş…¨«ÿÿÿÿÿ
+i
+java:S58438"TSimplify this regular expression to reduce its complexity from 23 to the 20 allowed.(ğ£Í
+H
+java:S1144"-Remove this unused private "cmdNoFix" method.(İ±°ìùÿÿÿÿ
+J
+java:S1144."/Remove this unused private "cmdWithFix" method.(´úÜÓúÿÿÿÿ

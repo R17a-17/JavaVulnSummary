@@ -1,0 +1,5 @@
+velocity test:
+#set ($value="aaaaa")
+value is '$value'
+value1 is "$value1"
+value2 is "$!value2"
