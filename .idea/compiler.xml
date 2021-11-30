@@ -12,7 +12,6 @@
         <module name="owasp" />
         <module name="ysoserial" />
         <module name="jndi" />
-        <module name="java-expression-injection" />
         <module name="fastjson" />
         <module name="xstream" />
         <module name="jenkins" />
@@ -20,5 +19,8 @@
         <module name="struts2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-expression-injection" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
