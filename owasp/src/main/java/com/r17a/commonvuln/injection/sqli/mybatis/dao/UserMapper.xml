@@ -19,9 +19,9 @@
     <select id="getByLikePrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
         SELECT * FROM user where name like concat('%',#{name}, '%')
     </select>
-<!--    <select id="getByLikePrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">-->
-<!--        SELECT * FROM user where name like "%"#{name}"%"-->
-<!--    </select>-->
+    <!--    <select id="getByLikePrepare" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">-->
+    <!--        SELECT * FROM user where name like "%"#{name}"%"-->
+    <!--    </select>-->
     <select id="getByIn" resultType="com.r17a.commonvuln.injection.sqli.mybatis.pojo.User">
         SELECT * FROM user where id in (${id})
     </select>

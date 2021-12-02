@@ -19,7 +19,7 @@ public class MybatisSqli {
 //        mybatisSqli.getByOrder("id and extractvalue(1,concat(0x7C,(select user()),0x7C))");
         System.out.println("--------------------------------fix test--------------------------------");
         mybatisSqli.getByIdPrepare("1' and 1=2 union select Host,User,1,authentication_string from mysql.user where User='root");
-        mybatisSqli.getByLikePrepare("wang%' and 1=2 union select Host,User,1,authentication_string from mysql.user where User like '%root");
+        mybatisSqli.getByLikePrepare("wang");
         mybatisSqli.getByInFix(new String[]{"1","2"});
         mybatisSqli.getByOrderFix("IF((select user())='root@localhost',id,name)");
     }
