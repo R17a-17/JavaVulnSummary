@@ -17,10 +17,10 @@
         <module>xstream</module>
         <module>owasp</module>
         <module>common</module>
-        <module>java-expression-injection</module>
         <module>struts2</module>
         <module>confluence</module>
         <module>jboss</module>
+        <module>log4j</module>
     </modules>
 
 

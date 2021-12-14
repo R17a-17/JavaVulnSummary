@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="weblogic" />
+        <module name="fastjson" />
+        <module name="confluence" />
+        <module name="struts2" />
         <module name="common" />
         <module name="jboss" />
         <module name="owasp" />
-        <module name="ysoserial" />
+        <module name="weblogic" />
         <module name="jndi" />
-        <module name="fastjson" />
-        <module name="xstream" />
         <module name="jenkins" />
-        <module name="confluence" />
-        <module name="struts2" />
+        <module name="xstream" />
+        <module name="ysoserial" />
+        <module name="log4j" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
